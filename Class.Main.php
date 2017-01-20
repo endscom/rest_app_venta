@@ -68,7 +68,64 @@ class Vistas{
     {
         
     }
-    
+    public static function PorRecuperar($V, $P)
+    {
+        $obj = new Sqlsrv();
+        if ($P=="1")
+        {
+            $Array = $obj->fetchArray("SELECT dcc.DOCUMENTO, dcc.FECHA_DOCUMENTO, dcc.FECHA_VENCE
+                                              , dcc.CONDICION_PAGO, cp.DESCRIPCION DESCRIPCION_CP, dcc.MONEDA
+                                              , dcc.VENDEDOR, ven.NOMBRE NOMBRE_VENDEDOR, dcc.CLIENTE, cli.NOMBRE NOMBRE_CLIENTE, dcc.TIPO
+                                              , dcc.SUBTIPO, sdcc.DESCRIPCION DESC_SUBTIPO, dcc.ANULADO, dcc.MONTO, dcc.SALDO
+                                       FROM Softland.umk.DOCUMENTOS_CC dcc INNER JOIN Softland.umk.CONDICION_PAGO cp ON dcc.CONDICION_PAGO = cp.CONDICION_PAGO
+                                            INNER JOIN Softland.umk.VENDEDOR ven ON dcc.VENDEDOR = ven.VENDEDOR INNER JOIN Softland.umk.CLIENTE cli on dcc.CLIENTE = cli.CLIENTE
+                                            INNER JOIN Softland.umk.SUBTIPO_DOC_CC sdcc ON dcc.TIPO = sdcc.TIPO AND dcc.SUBTIPO=sdcc.SUBTIPO
+                                       WHERE dcc.VENDEDOR= 'F06' AND dcc.TIPO IN ('FAC','N/C') AND dcc.SALDO>0 AND dcc.FECHA_VENCE <= '2017-01-17'
+                                       ORDER BY dcc.CLIENTE ",SQLSRV_FETCH_ASSOC);
+        }
+        else
+        {
+            $Array = $obj->fetchArray("SELECT dcc.DOCUMENTO, CONVERT(NVARCHAR(20),dcc.FECHA_DOCUMENTO, 103) FECHA_DOCUMENTO
+                                              , CONVERT(NVARCHAR(20), dcc.FECHA_VENCE, 103) FECHA_VENCE
+                                              , dcc.CONDICION_PAGO, cp.DESCRIPCION DESCRIPCION_CP, dcc.MONEDA
+                                              , dcc.VENDEDOR, ven.NOMBRE NOMBRE_VENDEDOR, dcc.CLIENTE, cli.NOMBRE NOMBRE_CLIENTE, dcc.TIPO
+                                              , dcc.SUBTIPO, sdcc.DESCRIPCION DESC_SUBTIPO, dcc.ANULADO, CAST(dcc.MONTO AS DECIMAL(28,4)) MONTO, CAST(dcc.SALDO AS DECIMAL(28,4)) SALDO
+                                       FROM Softland.umk.DOCUMENTOS_CC dcc INNER JOIN Softland.umk.CONDICION_PAGO cp ON dcc.CONDICION_PAGO = cp.CONDICION_PAGO
+                                            INNER JOIN Softland.umk.VENDEDOR ven ON dcc.VENDEDOR = ven.VENDEDOR INNER JOIN Softland.umk.CLIENTE cli on dcc.CLIENTE = cli.CLIENTE
+                                            INNER JOIN Softland.umk.SUBTIPO_DOC_CC sdcc ON dcc.TIPO = sdcc.TIPO AND dcc.SUBTIPO=sdcc.SUBTIPO
+                                       WHERE dcc.VENDEDOR= 'F06' AND dcc.TIPO IN ('FAC','N/C') AND dcc.SALDO>0 AND dcc.FECHA_VENCE <= '20170117'
+                                       ORDER BY dcc.CLIENTE ",SQLSRV_FETCH_ASSOC);
+        }
+        $FACTURAS = "INSERT INTO CC_CLIENTES VALUES ";
+        $i=1;
+        $TamPag=100;
+        $InicPag=1;
+        $FinPag=$TamPag;
+        $CantPags=1;
+        $pila=array();
+        foreach ($Array as $fila)
+        {
+            $FACTURAS .= "('".$fila['DOCUMENTO']."','".$fila['FECHA_DOCUMENTO']."','".$fila['FECHA_VENCE']."','".$fila['CONDICION_PAGO']."', '".$fila['DESCRIPCION_CP']."','".$fila['MONEDA']."','".$fila['VENDEDOR']."','".$fila['NOMBRE_VENDEDOR']."','".$fila['CLIENTE']."','".$fila['NOMBRE_CLIENTE']."','".$fila['TIPO']."','".$fila['SUBTIPO']."','".$fila['DESC_SUBTIPO']."','".$fila['ANULADO']."','".$fila['MONTO']."','".$fila['SALDO']."'),";
+            if ($i==$FinPag)
+            {
+                $pila[$CantPags-1]=substr($FACTURAS,0,strlen($FACTURAS)-1);
+                $InicPag+=$TamPag;
+                $FinPag+=$TamPag;
+                $CantPags+=1;
+                $FACTURAS = "INSERT INTO CC_CLIENTES VALUES ";
+            }
+            $i+=1;
+        }
+
+        $pila[$CantPags-1]=substr($FACTURAS,0,strlen($FACTURAS)-1);
+
+        for($x=0;$x<count($pila);$x++){
+            $json[0]["PorRecuperar"]["PorRecuperar".$x] = $pila[$x];
+        }
+        echo json_encode($json);
+        $obj->close();
+
+    }
     public static function Facturas($V, $P)
     {
         $obj = new Sqlsrv;
@@ -117,7 +174,6 @@ class Vistas{
         $obj->close();
     }
     public static function CLS($V,$P)
-
 	{
         
         $obj      = new Sqlsrv;
@@ -179,7 +235,7 @@ class Vistas{
         }
         else
         {
-            $ArrayProm    = $obj->fetchArray("SELECT * FROM app_ventas_master_vtas WHERE Codigo='".$V."' ",SQLSRV_FETCH_ASSOC);
+            $ArrayProm    = $obj->fetchArray("SELECT * FROM app_ventas_master_vtas WHERE Codigo='".$V."' ORDER BY Codigo ",SQLSRV_FETCH_ASSOC);
         }
         $PROMEDIOS = "INSERT INTO PROMEDIOS VALUES ";
         $pilaPROMEDIOS=array();
@@ -195,6 +251,32 @@ class Vistas{
         */
         $json[0]["PROMEDIOS"] = $pilaPROMEDIOS;
         /*FIN PROMEDIOS*/
+
+        /*Inicio PROMEDIOS 3 MESES*/
+        if ($P=="1")
+        {
+            $ArrayProm    = $obj->fetchArray("SELECT * FROM app_ventas_master_vtas_3 ORDER BY Codigo, CLIENTE",SQLSRV_FETCH_ASSOC);
+        }
+        else
+        {
+            $ArrayProm    = $obj->fetchArray("SELECT * FROM app_ventas_master_vtas_3 WHERE Codigo='".$V."' ORDER BY Codigo, CLIENTE",SQLSRV_FETCH_ASSOC);
+        }
+        $PROMEDIOS = "INSERT INTO PROMEDIOS3 VALUES ";
+        $pilaPROMEDIOS=array();
+        foreach ($ArrayProm as $fila)
+        {
+            $PROMEDIOS .= "('".$fila['Codigo']."','".$fila['Nombre']."','".$fila['CLIENTE']."','".$fila['NombreCliente']."','".$fila['Prm_art_3']."','".$fila['Prm_vta_3']."'),";
+        }
+        /*echo($PROMEDIOS);*/
+        $pilaPROMEDIOS=substr($PROMEDIOS,0,strlen($PROMEDIOS)-1);
+        /*print_r($pilaPROMEDIOS);*/
+        /*for($m=0;$m<count($pilaPROMEDIOS);$m++)
+            {$json[0]["PROMEDIOS"] = $pilaPROMEDIOS[$m];}
+        */
+        $json[0]["PROMEDIOS3"] = $pilaPROMEDIOS;
+
+        /*FIN PROMEDIOS 3 MESES*/
+
         echo json_encode($json);
         $obj->close();
     }
