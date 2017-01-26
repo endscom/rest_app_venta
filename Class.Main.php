@@ -126,6 +126,55 @@ class Vistas{
         $obj->close();
 
     }
+    public static function Facturas3($V, $P)
+    {
+        $obj = new Sqlsrv;
+
+        if ($P=="1")
+        {
+            //$Array    = $obj->fetchArray("SELECT * FROM app_ventas_master_detalle_vtas ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
+            $Array    = $obj->fetchArray("SELECT * FROM app_ventas_Indicadores3 ORDER BY CODIGO, NOMBRE, CODCLIENTE, NOMBREDELCLIENTE",SQLSRV_FETCH_ASSOC);
+        }
+        else
+        {
+            //$Array    = $obj->fetchArray("SELECT * FROM app_ventas_master_detalle_vtas WHERE Codigo='".$V."' ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
+            $Array    = $obj->fetchArray("SELECT * FROM app_ventas_Indicadores3 WHERE CODIGO='".$V."' ORDER BY CODIGO, NOMBRE, CODCLIENTE, NOMBREDELCLIENTE",SQLSRV_FETCH_ASSOC);
+        }
+        //$inCLS    = "( ";
+        //$CLIENTES = "INSERT INTO CLIENTES VALUES ";
+        $FACTURAS = "INSERT INTO INDICADORES3 VALUES ";
+        $i=1;
+        $TamPag=100;
+        $InicPag=1;
+        $FinPag=$TamPag;
+        $CantPags=1;
+        $pila=array();
+        foreach ($Array as $fila)
+        {
+            //$inCLS .= "'".$fila['CLIENTE']."',";
+            //$CLIENTES .= "('".$fila['CLIENTE']."','".$fila['NOMBRE']."','".$fila['DIRECCION']."','".$fila['TELEFONO1']."','0'),";
+            $FACTURAS .= "('".$fila['CODIGO']."','".$fila['NOMBRE']."','".$fila['CODCLIENTE']."','".$fila['NOMBREDELCLIENTE']."', '".$fila['VENTAS_3']."','".$fila['NUM_ART_FAC']."','".$fila['PROMEDIO_ART']."','".$fila['MontoPromXFac']."'),";
+            if ($i==$FinPag)
+            {
+
+                $pila[$CantPags-1]=substr($FACTURAS,0,strlen($FACTURAS)-1);
+                $InicPag+=$TamPag;
+                $FinPag+=$TamPag;
+                $CantPags+=1;
+                $FACTURAS = "INSERT INTO INDICADORES3 VALUES ";
+
+            }
+            $i+=1;
+        }
+
+        $pila[$CantPags-1]=substr($FACTURAS,0,strlen($FACTURAS)-1);
+
+        for($x=0;$x<count($pila);$x++){
+            $json[0]["FACTURASINDICADORES"]["FACTURASINDICADORES".$x] = $pila[$x];
+        }
+        echo json_encode($json);
+        $obj->close();
+    }
     public static function Facturas($V, $P)
     {
         $obj = new Sqlsrv;
@@ -133,10 +182,12 @@ class Vistas{
         if ($P=="1")
         {
             $Array    = $obj->fetchArray("SELECT * FROM app_ventas_master_detalle_vtas ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
+            //$Array    = $obj->fetchArray("SELECT * FROM app_ventas_Indicadores3 ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
         }
         else
         {
             $Array    = $obj->fetchArray("SELECT * FROM app_ventas_master_detalle_vtas WHERE Codigo='".$V."' ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
+            //$Array    = $obj->fetchArray("SELECT * FROM app_ventas_Indicadores3 WHERE CODIGO='".$V."' ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
         }
         //$inCLS    = "( ";
         //$CLIENTES = "INSERT INTO CLIENTES VALUES ";
@@ -178,7 +229,6 @@ class Vistas{
         
         $obj      = new Sqlsrv;
 
-        
         if ($P=="1")
         {
             $Array    = $obj->fetchArray("SELECT * FROM app_ventas_clientes ORDER BY VENDEDOR, CLIENTE",SQLSRV_FETCH_ASSOC);
@@ -220,7 +270,6 @@ class Vistas{
             $json[0]["CLIENTES"]["CLIENTES".$x] = $pila[$x];
         }
 
-
         $inCLS = substr($inCLS,0,-1)." )";
         
        /* $pila1 = self::FACTURAS_PUNTOS($inCLS);
@@ -228,6 +277,7 @@ class Vistas{
             $json[0]["FACTURAS"]["FACTURAS".$y] = $pila1[$y];
         }
        */
+/*__________________________________________________________________________________________________________________________________________________________________*/
         /*Inicio PROMEDIOS*/
         if ($P=="1")
         {
@@ -251,7 +301,7 @@ class Vistas{
         */
         $json[0]["PROMEDIOS"] = $pilaPROMEDIOS;
         /*FIN PROMEDIOS*/
-
+/*__________________________________________________________________________________________________________________________________________________________________*/
         /*Inicio PROMEDIOS 3 MESES*/
         if ($P=="1")
         {
@@ -276,9 +326,46 @@ class Vistas{
         $json[0]["PROMEDIOS3"] = $pilaPROMEDIOS;
 
         /*FIN PROMEDIOS 3 MESES*/
+/*__________________________________________________________________________________________________________________________________________________________________*/
+        /*Inicio METAS*/
+        $obj = new Vistas;
+        $link = $obj ->open_database_connectionMYSQL();
+        $qry= "SELECT * FROM metas ORDER BY CodVendedor, CodCliente";
+        $resultado= mysql_query($qry,$link) or die (mysql_error());
+        $pP=array();
+        $i=1;
+        $TamPag=100;
+        $InicPag=1;
+        $FinPag=$TamPag;
+        $CantPags=1;
+        $met = "INSERT INTO metas VALUES ";
+
+        while($row = mysql_fetch_assoc($resultado))
+        {
+            $met .= "('".$row['CodVendedor']."','".$row['NombreVendedor']."','".$row['CodCliente']."','".utf8_encode($row['NombreCliente'])."','".$row['MontoVenta']."','".$row['NumItemFac']."','".$row['MontoXFac']."','".$row['PromItemXFac']."'),";
+            if ($i==$FinPag)
+            {
+                $pP[$CantPags]=substr($met,0,strlen($met)/*-1*/);
+                $InicPag+=$TamPag;
+                $FinPag+=$TamPag;
+                $CantPags+=1;
+                $met = "INSERT INTO metas VALUES ";
+            }
+            $i+=1;
+        }
+
+        $pP[$CantPags]=substr($met,0,strlen($met)/*-1*/);
+
+        for($x=0;$x<count($pila);$x++){
+            $json[0]["METAS"]["METAS".$x] = $pila[$x];
+        }
+
+        //$json[0]["METAS"] = $pP;
+        /*FIN METAS*/
+       /*__________________________________________________________________________________________________________________________________________________________________*/
 
         echo json_encode($json);
-        $obj->close();
+        //$obj->close();
     }
 
     public static function ExecuteSQL($SQL){
@@ -286,6 +373,7 @@ class Vistas{
         $json["Execute"]= ((mysql_query($SQL,Vistas::open_database_connectionMYSQL())) ? 1 : 0);
         echo json_encode($json);
     }
+
 
 }
 ?>
