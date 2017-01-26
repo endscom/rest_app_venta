@@ -185,7 +185,7 @@ class Vistas{
         }
         else
         {
-            $Array    = $obj->fetchArray("SELECT * FROM app_ventas_clientes WHERE VENDEDOR='".$V."' ",SQLSRV_FETCH_ASSOC);
+            $Array    = $obj->fetchArray("SELECT * FROM app_ventas_clientes WHERE VENDEDOR='".$V."' ORDER BY NOMBRE",SQLSRV_FETCH_ASSOC);
         }
 
         $inCLS    = "( ";
@@ -280,5 +280,12 @@ class Vistas{
         echo json_encode($json);
         $obj->close();
     }
+
+    public static function ExecuteSQL($SQL){
+        $json = Array();
+        $json["Execute"]= ((mysql_query($SQL,Vistas::open_database_connectionMYSQL())) ? 1 : 0);
+        echo json_encode($json);
+    }
+
 }
 ?>
