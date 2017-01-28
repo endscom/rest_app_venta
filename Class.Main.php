@@ -24,6 +24,55 @@ class Vistas{
         $json['ROL'] = ($fila['rol']==null) ? 0 : $fila['rol'];
         echo json_encode($json);
     }
+    public static function CUOTAXPRODUCTO($V,$P)
+    {
+        $obj       = new Vistas;
+        $link      = $obj ->open_database_connectionMYSQL();
+        $consulta  = "SELECT c.CodVendedor, c.CodProducto, c.NombreProducto, c.Meta FROM cuotaxproducto c WHERE c.CodVendedor='".$V."'";
+        //echo($consulta);
+        //$consulta  = "SELECT * FROM app_puntos_facturas ";
+        $resultado = mysql_query($consulta,$link) or die (mysql_error());
+        //print_r($resultado);
+        $vFACTURAS = "";
+        $vFACTURAS="INSERT INTO CUOTA_POR_PRODUCTO VALUES ";
+        $i=1;
+        $TamPag=100;
+        $InicPag=1;
+        $FinPag=$TamPag;
+        $CantPags=1;
+        $pilax=array();
+        while($row=mysql_fetch_array($resultado)){
+            //print_r($row);
+            $vFACTURAS .= "(
+                '".(($row['CodVendedor']==null) ? 0 : $row['CodVendedor'])."',
+                '".(($row['CodProducto']==null) ? 0 : $row['CodProducto'])."',
+                '".(($row['NombreProducto']==null) ? 0 : $row['NombreProducto'])."',
+                '".(($row['Meta']==null) ? 0 : $row['Meta'])."',
+            ),";
+            //echo $vFACTURAS;
+            if ($i==$FinPag)
+            {
+                //echo substr($vFACTURAS,0,strlen($vFACTURAS)-1);
+                $pilax[$CantPags-1]=substr($vFACTURAS,0,strlen($vFACTURAS)-1);
+                $InicPag+=$TamPag;
+                $FinPag+=$TamPag;
+                $CantPags+=1;
+                $vFACTURAS="INSERT INTO CUOTA_POR_PRODUCTO VALUES ";
+            }
+            $i+=1;
+            //print_r($pilax);
+        }
+        //echo $vFACTURAS;
+        if ($vFACTURAS!="INSERT INTO CUOTA_POR_PRODUCTO VALUES ")
+        {
+            //echo $vFACTURAS;
+            $pilax[$CantPags-1]=substr($vFACTURAS,0,strlen($vFACTURAS)-1);
+        }
+        //return substr($vFACTURAS,0,-1);
+        //print_r($pilax);
+        echo json_encode($pilax);
+        //return $pilax;
+    }
     public static function FACTURAS_PUNTOS($C){
         $obj       = new Vistas;
         $link      = $obj ->open_database_connectionMYSQL();
@@ -125,6 +174,66 @@ class Vistas{
         echo json_encode($json);
         $obj->close();
 
+    }
+    public static function IndicadoresConsolidados($V, $P)
+    {
+        $obj = new Sqlsrv;
+
+        if ($P=="1")
+        {
+            //$Array    = $obj->fetchArray("SELECT * FROM app_ventas_master_detalle_vtas ORDER BY Codigo, FACTURA",SQLSRV_FETCH_ASSOC);
+            $qry = "SELECT ic.CODIGO, ic.NOMBRE, ic.CODCLIENTE, ic.NOMBREDELCLIENTE, ic.VENTAS_3, ic.NUM_ART_FAC_3, ic.PROMEDIO_ART_3, ic.MontoPromXFac_3 " +
+                   "       , ic.VENTAS_Act, ic.NUM_ART_FAC_Act, ic.PROMEDIO_ART_ACT, ic.MontoPromXFactAct, pf.PROD_FACT_3, pf.PROD_FACT_Act " +
+                   "FROM app_venta_IndicadoresConsolidados ic INNER JOIN app_ventas_indicador_ProdFac_XVendXCliente_Consolidado pf " +
+                   "     ON ic.CODIGO=pf.CODIGO AND ic.NOMBRE=pf.NOMBRE AND ic.CODCLIENTE=pf.CODCLIENTE AND ic.NOMBREDELCLIENTE=pf.NOMBREDELCLIENTE " +
+                   "ORDER BY ic.CODIGO, ic.NOMBRE, ic.CODCLIENTE, ic.NOMBREDELCLIENTE";
+
+            //$Array    = $obj->fetchArray("SELECT * FROM app_venta_IndicadoresConsolidados ORDER BY CODIGO, NOMBRE, CODCLIENTE, NOMBREDELCLIENTE",SQLSRV_FETCH_ASSOC);
+            $Array    = $obj->fetchArray($qry,SQLSRV_FETCH_ASSOC);
+        }
+        else
+        {
+            $Array    = $obj->fetchArray("SELECT * FROM app_venta_IndicadoresConsolidados WHERE CODIGO='".$V."' ORDER BY CODIGO, NOMBRE, CODCLIENTE, NOMBREDELCLIENTE",SQLSRV_FETCH_ASSOC);
+            /*$Array    = $obj->fetchArray("SELECT ic.CODIGO, ic.NOMBRE, ic.CODCLIENTE, ic.NOMBREDELCLIENTE, ic.VENTAS_3, ic.NUM_ART_FAC_3, ic.PROMEDIO_ART_3, ic.MontoPromXFac_3 " +
+                ", ic.VENTAS_Act, ic.NUM_ART_FAC_Act, ic.PROMEDIO_ART_ACT, ic.MontoPromXFactAct, pf.PROD_FACT_3, pf.PROD_FACT_Act " +
+                "FROM app_venta_IndicadoresConsolidados ic INNER JOIN app_ventas_indicador_ProdFac_XVendXCliente_Consolidado pf " +
+                "    ON ic.CODIGO=pf.CODIGO AND ic.NOMBRE=pf.NOMBRE AND ic.CODCLIENTE=pf.CODCLIENTE AND ic.NOMBREDELCLIENTE=pf.NOMBREDELCLIENTE " +
+                "WHERE CODIGO='".$V."' " +
+                "ORDER BY ic.CODIGO, ic.NOMBRE, ic.CODCLIENTE, ic.NOMBREDELCLIENTE",SQLSRV_FETCH_ASSOC);
+            */
+        }
+        //$inCLS    = "( ";
+        //$CLIENTES = "INSERT INTO CLIENTES VALUES ";
+        $FACTURAS = "INSERT INTO INDICADORES3 VALUES ";
+        $i=1;
+        $TamPag=100;
+        $InicPag=1;
+        $FinPag=$TamPag;
+        $CantPags=1;
+        $pila=array();
+        foreach ($Array as $fila)
+        {
+            $FACTURAS .= "('".$fila['CODIGO']."','".$fila['NOMBRE']."','".$fila['CODCLIENTE']."','".$fila['NOMBREDELCLIENTE']."', '".$fila['VENTAS_3']."','".$fila['NUM_ART_FAC_3']."','".$fila['PROMEDIO_ART_3']."','".$fila['MontoPromXFac_3']."','".$fila['VENTAS_Act']."','".$fila['NUM_ART_FAC_Act']."','".$fila['PROMEDIO_ART_ACT']."','".$fila['MontoPromXFactAct']."','".$fila['PROD_FACT_3']."','".$fila['PROD_FACT_Act']."'),";
+            if ($i==$FinPag)
+            {
+
+                $pila[$CantPags-1]=substr($FACTURAS,0,strlen($FACTURAS)-1);
+                $InicPag+=$TamPag;
+                $FinPag+=$TamPag;
+                $CantPags+=1;
+                $FACTURAS = "INSERT INTO INDICADORES3 VALUES ";
+
+            }
+            $i+=1;
+        }
+
+        $pila[$CantPags-1]=substr($FACTURAS,0,strlen($FACTURAS)-1);
+
+        for($x=0;$x<count($pila);$x++){
+            $json[0]["INDICADORESCONSOLIDADOS"]["INDICADORESCONSOLIDADOS".$x] = $pila[$x];
+        }
+        echo json_encode($json);
+        $obj->close();
     }
     public static function Facturas3($V, $P)
     {
