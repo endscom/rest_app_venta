@@ -24,6 +24,65 @@ class Vistas{
         $json['ROL'] = ($fila['rol']==null) ? 0 : $fila['rol'];
         echo json_encode($json);
     }
+
+    public static function METASXCLIENTE($V,$P)
+    {
+        $obj       = new Vistas;
+        $link      = $obj ->open_database_connectionMYSQL();
+        $consulta  = "SELECT m.CodVendedor, m.CodCliente, m.NombreCliente, m.MontoVenta, m.NumItemFac, m.MontoXFac,  m.PromItemXFac  FROM METAS m WHERE m.CodVendedor='".$V."'";
+        //echo($consulta);
+        //$consulta  = "SELECT * FROM app_puntos_facturas ";
+        $resultado = mysql_query($consulta,$link) or die (mysql_error());
+        //print_r($resultado);
+        $vFACTURAS = "";
+        $vFACTURAS="INSERT INTO METAS_POR_CLIENTE VALUES ";
+        $i=1;
+        $TamPag=100;
+        $InicPag=1;
+        $FinPag=$TamPag;
+        $CantPags=1;
+        $pilax=array();
+        while($row=mysql_fetch_array($resultado)){
+            //print_r($row);
+            $vFACTURAS .= "(
+                '".(($row['CodVendedor']==null) ? 0 : $row['CodVendedor'])."',
+                '".(($row['CodCliente']==null) ? 0 : $row['CodCliente'])."',
+                '".(($row['NombreCliente']==null) ? 0 : $row['NombreCliente'])."',
+                '".(($row['MontoVenta']==null) ? 0 : $row['MontoVenta'])."',
+                '".(($row['NumItemFac']==null) ? 0 : $row['NumItemFac'])."',
+                '".(($row['MontoXFac']==null) ? 0 : $row['MontoXFac'])."',
+                '".(($row['PromItemXFac']==null) ? 0 : $row['PromItemXFac'])."'
+            ),";
+            //echo $vFACTURAS;
+            if ($i==$FinPag)
+            {
+                //echo substr($vFACTURAS,0,strlen($vFACTURAS)-1);
+                $pilax[$CantPags-1]=substr($vFACTURAS,0,strlen($vFACTURAS)-1);
+                $InicPag+=$TamPag;
+                $FinPag+=$TamPag;
+                $CantPags+=1;
+                $vFACTURAS="INSERT INTO METAS_POR_CLIENTE VALUES ";
+            }
+            $i+=1;
+            //print_r($pilax);
+        }
+        //echo $vFACTURAS;
+        if ($vFACTURAS!="INSERT INTO METAS_POR_CLIENTE VALUES ")
+        {
+            //echo $vFACTURAS;
+            $pilax[$CantPags-1]=substr($vFACTURAS,0,strlen($vFACTURAS)-1);
+        }
+
+        for($x=0;$x<count($pilax);$x++){
+            $json[0]["METASXCLIENTE"]["METASXCLIENTE".$x] = $pilax[$x];
+        }
+
+        //return substr($vFACTURAS,0,-1);
+        //print_r($pilax);
+        echo json_encode($json);
+        //return $pilax;
+    }
+
     public static function CUOTAXPRODUCTO($V,$P)
     {
         $obj       = new Vistas;
@@ -47,7 +106,7 @@ class Vistas{
                 '".(($row['CodVendedor']==null) ? 0 : $row['CodVendedor'])."',
                 '".(($row['CodProducto']==null) ? 0 : $row['CodProducto'])."',
                 '".(($row['NombreProducto']==null) ? 0 : $row['NombreProducto'])."',
-                '".(($row['Meta']==null) ? 0 : $row['Meta'])."',
+                '".(($row['Meta']==null) ? 0 : $row['Meta'])."'
             ),";
             //echo $vFACTURAS;
             if ($i==$FinPag)
@@ -68,9 +127,14 @@ class Vistas{
             //echo $vFACTURAS;
             $pilax[$CantPags-1]=substr($vFACTURAS,0,strlen($vFACTURAS)-1);
         }
+
+        for($x=0;$x<count($pilax);$x++){
+            $json[0]["CUOTAXPRODUCTO"]["CUOTAXPRODUCTO".$x] = $pilax[$x];
+        }
+
         //return substr($vFACTURAS,0,-1);
         //print_r($pilax);
-        echo json_encode($pilax);
+        echo json_encode($json);
         //return $pilax;
     }
     public static function FACTURAS_PUNTOS($C){

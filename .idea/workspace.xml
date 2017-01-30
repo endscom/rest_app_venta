@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd6f019-190f-49b5-8f2d-b7aa4c621470" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CUOTAXPRODUCTO.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/INDICADORESCONSOLIDADOS.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/METASPORCLIENTE.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Class.Main.php" afterPath="$PROJECT_DIR$/Class.Main.php" />
     </list>
@@ -30,55 +29,61 @@
       <file leaf-file-name="Class.Main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Class.Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20135364">
-              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.8849408">
+              <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
               <folding>
                 <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
                 <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
                 <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+                <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
                 <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
                 <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-                <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-                <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-                <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-                <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-                <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-                <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-                <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-                <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-                <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-                <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-                <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-                <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-                <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-                <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-                <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-                <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-                <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-                <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-                <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-                <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-                <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-                <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-                <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-                <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-                <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-                <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-                <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-                <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-                <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-                <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-                <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-                <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-                <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+                <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+                <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+                <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+                <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+                <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+                <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+                <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+                <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+                <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+                <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+                <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+                <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+                <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+                <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+                <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+                <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+                <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+                <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+                <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+                <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+                <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+                <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+                <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+                <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+                <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+                <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+                <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+                <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+                <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+                <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+                <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+                <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+                <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+                <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+                <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+                <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+                <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+                <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
               </folding>
             </state>
           </provider>
@@ -97,8 +102,18 @@
       <file leaf-file-name="INDICADORESCONSOLIDADOS.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/INDICADORESCONSOLIDADOS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="METASPORCLIENTE.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/METASPORCLIENTE.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -136,6 +151,7 @@
         <option value="$PROJECT_DIR$/FACTURASINDICADORESACT.php" />
         <option value="$PROJECT_DIR$/INDICADORESCONSOLIDADOS.php" />
         <option value="$PROJECT_DIR$/CUOTAXPRODUCTO.php" />
+        <option value="$PROJECT_DIR$/METASPORCLIENTE.php" />
         <option value="$PROJECT_DIR$/Class.Main.php" />
       </list>
     </option>
@@ -180,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -202,6 +217,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,13 +266,20 @@
       <option name="number" value="Default" />
       <updated>1485014201220</updated>
     </task>
+    <task id="LOCAL-00001" summary="Cuota de Venta por Producto y se reescribio el servicio de indicadores de clientes">
+      <created>1485622658920</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485622658920</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -265,6 +288,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -286,6 +310,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cuota de Venta por Producto y se reescribio el servicio de indicadores de clientes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cuota de Venta por Producto y se reescribio el servicio de indicadores de clientes" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -301,49 +329,55 @@
             <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-            <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-            <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-            <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-            <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-            <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-            <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-            <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-            <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-            <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
           </folding>
         </state>
       </provider>
@@ -388,49 +422,55 @@
             <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-            <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-            <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-            <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-            <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-            <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-            <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-            <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-            <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-            <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
           </folding>
         </state>
       </provider>
@@ -475,49 +515,148 @@
             <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-            <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-            <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-            <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-            <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-            <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-            <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-            <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-            <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-            <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FACTURASINDICADORES.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/INDICADORESCONSOLIDADOS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CUOTAXPRODUCTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTES.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class.Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
           </folding>
         </state>
       </provider>
@@ -546,49 +685,55 @@
             <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-            <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-            <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-            <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-            <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-            <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-            <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-            <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-            <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-            <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
           </folding>
         </state>
       </provider>
@@ -616,49 +761,55 @@
             <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-            <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-            <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-            <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-            <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-            <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-            <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-            <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-            <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-            <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
           </folding>
         </state>
       </provider>
@@ -682,6 +833,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.21161826">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -708,14 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/INDICADORESCONSOLIDADOS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CUOTAXPRODUCTO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -724,57 +868,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/INDICADORESCONSOLIDADOS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/METASPORCLIENTE.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Class.Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20135364">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.8849408">
+          <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
           <folding>
             <element signature="n#VENDEDORES#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#FACTURAS_PUNTOS#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#master_vtas#0;n#Vistas#0;n#!!top" expanded="false" />
+            <element signature="n#PorRecuperar#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas3#0;n#Vistas#0;n#!!top" expanded="false" />
             <element signature="n#Facturas#0;n#Vistas#0;n#!!top" expanded="false" />
-            <marker date="1485553340135" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1289" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1184:1296" placeholder="SELECT c.Cod..cuotaxproducto..." />
-            <marker date="1485553340135" expanded="true" signature="1537:1574" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2483:2520" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="2650:2687" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="3115:3166" placeholder="SELECT * FRO..app_puntos_facturas..." />
-            <marker date="1485553340135" expanded="true" signature="3352:3393" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4344:4385" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4494:4535" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="4899:6016" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="6112:7415" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
-            <marker date="1485553340135" expanded="true" signature="7470:7500" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="8360:8390" placeholder="INSERT INTO CC_CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="9671:9772" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="9895:9936" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
-            <marker date="1485553340135" expanded="true" signature="9937:10060" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
-            <marker date="1485553340135" expanded="true" signature="10955:10986" placeholder="INSERT INTO INDICADORESAct..." />
-            <marker date="1485553340135" expanded="true" signature="11832:11863" placeholder="INSERT INTO INDICADORES..." />
-            <marker date="1485553340135" expanded="true" signature="12472:12563" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="12819:12932" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
-            <marker date="1485553340135" expanded="true" signature="13068:13099" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="13944:13975" placeholder="INSERT INTO INDICADORES3..." />
-            <marker date="1485553340135" expanded="true" signature="14447:14516" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="14743:14834" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="15121:15162" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16009:16050" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="16541:16601" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16699:16772" placeholder="SELECT * FRO..app_ventas_clientes..." />
-            <marker date="1485553340135" expanded="true" signature="16853:16880" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="16905:16946" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
-            <marker date="1485553340135" expanded="true" signature="17561:17588" placeholder="INSERT INTO CLIENTES..." />
-            <marker date="1485553340135" expanded="true" signature="18352:18404" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18506:18580" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
-            <marker date="1485553340135" expanded="true" signature="18636:18664" placeholder="INSERT INTO PROMEDIOS..." />
-            <marker date="1485553340135" expanded="true" signature="19480:19543" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19645:19730" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
-            <marker date="1485553340135" expanded="true" signature="19785:19814" placeholder="INSERT INTO PROMEDIOS3..." />
-            <marker date="1485553340135" expanded="true" signature="20712:20764" placeholder="SELECT * FRO..metas..." />
-            <marker date="1485553340135" expanded="true" signature="20973:20997" placeholder="INSERT INTO metas..." />
-            <marker date="1485553340135" expanded="true" signature="21544:21568" placeholder="INSERT INTO metas..." />
+            <element signature="n#CLS#0;n#Vistas#0;n#!!top" expanded="false" />
+            <marker date="1485803022079" expanded="true" signature="435:505" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1485803022079" expanded="true" signature="1184:1336" placeholder="SELECT m.Cod..METAS..." />
+            <marker date="1485803022079" expanded="true" signature="1577:1613" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2762:2798" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="2928:2964" placeholder="INSERT INTO CUOTA_POR_PRODUCTO..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3629" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3524:3636" placeholder="SELECT c.Cod..cuotaxproducto..." />
+            <marker date="1485803022079" expanded="true" signature="3877:3914" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4822:4859" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="4989:5026" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="5580:5631" placeholder="SELECT * FRO..app_puntos_facturas..." />
+            <marker date="1485803022079" expanded="true" signature="5817:5858" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6809:6850" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="6959:7000" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="7364:8481" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="8577:9880" placeholder="SELECT dcc.D..DOCUMENTOS_CC..." />
+            <marker date="1485803022079" expanded="true" signature="9935:9965" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="10825:10855" placeholder="INSERT INTO CC_CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="12136:12237" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="12360:12401" placeholder="SELECT ic.CO..app_venta_IndicadoresConsolidados..." />
+            <marker date="1485803022079" expanded="true" signature="12402:12525" placeholder="SELECT * FRO..app_ventas_IndicadoresAct..." />
+            <marker date="1485803022079" expanded="true" signature="13420:13451" placeholder="INSERT INTO INDICADORESAct..." />
+            <marker date="1485803022079" expanded="true" signature="14297:14328" placeholder="INSERT INTO INDICADORES..." />
+            <marker date="1485803022079" expanded="true" signature="14937:15028" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15284:15397" placeholder="SELECT * FRO..app_ventas_Indicadores3..." />
+            <marker date="1485803022079" expanded="true" signature="15533:15564" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16409:16440" placeholder="INSERT INTO INDICADORES3..." />
+            <marker date="1485803022079" expanded="true" signature="16912:16981" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17208:17299" placeholder="SELECT * FRO..app_ventas_master_detalle_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="17586:17627" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="18474:18515" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="19006:19066" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19164:19237" placeholder="SELECT * FRO..app_ventas_clientes..." />
+            <marker date="1485803022079" expanded="true" signature="19318:19345" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="19370:19411" placeholder="INSERT INTO DETALLE_FACTURA_PUNTOS..." />
+            <marker date="1485803022079" expanded="true" signature="20026:20053" placeholder="INSERT INTO CLIENTES..." />
+            <marker date="1485803022079" expanded="true" signature="20817:20869" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="20971:21045" placeholder="SELECT * FRO..app_ventas_master_vtas..." />
+            <marker date="1485803022079" expanded="true" signature="21101:21129" placeholder="INSERT INTO PROMEDIOS..." />
+            <marker date="1485803022079" expanded="true" signature="21945:22008" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22110:22195" placeholder="SELECT * FRO..app_ventas_master_vtas_3..." />
+            <marker date="1485803022079" expanded="true" signature="22250:22279" placeholder="INSERT INTO PROMEDIOS3..." />
+            <marker date="1485803022079" expanded="true" signature="23177:23229" placeholder="SELECT * FRO..metas..." />
+            <marker date="1485803022079" expanded="true" signature="23438:23462" placeholder="INSERT INTO metas..." />
+            <marker date="1485803022079" expanded="true" signature="24009:24033" placeholder="INSERT INTO metas..." />
           </folding>
         </state>
       </provider>
